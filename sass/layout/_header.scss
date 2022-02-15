@@ -1,12 +1,12 @@
 .header {
     height: 95vh;
     background-image:  
-    url('../img/shal-home-page.png');
+    url('../img/shalhero.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
 
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
 
     &__logo-box{
         position: absolute;
