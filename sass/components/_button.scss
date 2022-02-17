@@ -28,6 +28,7 @@
     &--white{
         background-color: $color-primary;
         color: $color-black;
+        font-size: $default-font-size;
 
         &::after{
             background-color: $color-primary;

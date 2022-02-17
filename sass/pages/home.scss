@@ -12,14 +12,15 @@
 
 .section-features {
     background-color: $color-white;
-    padding: 20rem 0;
-    margin-top: -20vh;
+    padding: 20rem;
+    margin-top: -17vh;
+    margin-bottom: -17vh;
         // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
 }
 
 .section-about {
     background-color: $color-white;
-    padding: 10rem 0;
+    padding: 6rem 0;
     margin-top: -10vh;
 
         // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
@@ -37,6 +38,7 @@
     }
 
     &__details {
+        color: $color-primary-dark;
         font-size: $medium-font-size;
         margin-top: 1.5rem;
 
@@ -53,16 +55,22 @@
             margin-top: 0.5rem;
         }
     }
+
+    p {
+        color: $color-primary-dark;
+        font-size: $default-font-size;
+    }
 }
 
 .section-services {
     background-color: $color-white;
-    padding: 25rem 0 40rem 0;
-    margin-top: -50rem;
+    padding: 25rem 10rem 40rem ;
+        
 }
 
 
 .section-reviews {
     padding: 15rem 0;
     background-color: $color-grey-light-1;
+    margin-top: -20vh;
 }

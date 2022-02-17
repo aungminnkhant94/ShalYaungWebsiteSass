@@ -1,0 +1,94 @@
+.footer {
+    background-color: $color-grey-dark-1;
+    padding: 7rem 0;
+    font-size: 1.4rem;
+
+    h3 {
+        color: $color-white;
+    }
+
+    &__data {
+        row-gap: .75rem;
+    }
+
+    &__logo-box {
+        text-align: center;
+        margin-top: -5rem;
+    }
+
+    &__logo {
+        width: 20rem;
+        height: auto;
+        
+    }
+
+    &__information {
+        list-style: none;
+        padding: 2rem auto;
+        font-size: $medium-font-size;
+        margin-bottom: 1rem;
+        text-align: left;
+        color: aliceblue;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        &--icon {
+            // font-size: 2.7rem;
+            // margin-right: 2rem;
+            // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+            // color: transparent;
+            font-size: 2.7rem;
+            margin-bottom: .5rem;
+            margin-right: 1rem;
+            padding-right: 2rem;
+            display: inline-block;
+            background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+            -webkit-background-clip: text; 
+            //  .2rem
+            color: transparent;
+        }
+    }
+
+    // &__navigation {
+    //     border-top: 1px solid $color-grey-light-1;
+    //     padding: 2rem;
+    //     display: inline-block;
+    // }
+
+    // &__list {
+    //     list-style: none;
+    // }
+
+    // &__link {
+    //     &:link,
+    //     &:visited {
+    //         color: $color-grey-light-1;
+    //         text-transform: uppercase;
+    //         display: inline-block;
+    //     }
+    // }
+    
+    &__copyright {
+        text-align: center;
+        color: $color-primary;
+        font-weight: 500;
+        font-size: $medium-font-size;
+        margin-top: 2rem;
+        border-top: 2px solid black;
+        padding-top: 4rem;
+
+        a {
+            text-decoration: none;
+        }
+
+        span {
+            color: black;
+            font-weight: bold;
+            
+        }
+    }
+}
