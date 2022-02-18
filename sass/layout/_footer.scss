@@ -3,6 +3,10 @@
     padding: 7rem 0;
     font-size: 1.4rem;
 
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
     h3 {
         color: $color-white;
     }
@@ -14,12 +18,19 @@
     &__logo-box {
         text-align: center;
         margin-top: -5rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__logo {
         width: 20rem;
         height: auto;
         
+        @include respond(phone) {
+            margin-left: 2rem;
+        }
     }
 
     &__information {
@@ -30,6 +41,17 @@
         text-align: left;
         color: aliceblue;
         text-align: center;
+
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 1rem auto;
+            text-align: left;
+        }
+
+        @include respond(phone) {
+            text-align: left;
+            margin-right: auto;
+        }
 
         a {
             text-decoration: none;
