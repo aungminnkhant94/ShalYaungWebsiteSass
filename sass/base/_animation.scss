@@ -39,3 +39,12 @@
         transform: translate(0);
     }
 }
+
+@keyframes moveArrow {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

@@ -28,6 +28,11 @@ body {
         @include respond(phone) {
             letter-spacing: 1rem;
             font-size: 5rem;
+
+        }
+
+        @include respond(tab-port) {
+            text-align: center;
         }
         
     }
@@ -40,13 +45,13 @@ body {
         animation: moveInRight 1s ease-out;
 
         @include respond(phone) {
+            letter-spacing: 0.5rem;
             font-weight: 600;
-            display: inline-block;
+            font-size: 10rem;
         }
 
         @include respond(tab-port) {
             font-size: 1.2rem;
-            font-size: $medium-font-size;
             text-align: center;
         }
     }
@@ -65,7 +70,7 @@ body {
     transition: all .2s;
 
     @include respond(tab-port) {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     @include respond(phone) {
