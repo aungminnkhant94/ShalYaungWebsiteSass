@@ -63,18 +63,19 @@ body {
         font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
-    font-size: 20px;
+    font-size: 2.3rem;
     font-weight: 400;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
     animation: moveInRight 1s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: 0.5rem;
-        font-weight: 600; } }
+        font-weight: 600;
+        display: inline-block; } }
     @media (max-width: 56.25em) {
       .heading-primary--sub {
-        letter-spacing: 0.5rem;
-        font-size: 1.2rem; } }
+        font-size: 1.2rem;
+        font-size: 2rem;
+        text-align: center; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -171,6 +172,7 @@ body {
   background-image: url("../img/shalhero.jpg");
   background-size: cover;
   background-position: center;
+  z-index: -1;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh); }
   @media (max-width: 37.5em) {
@@ -258,7 +260,8 @@ body {
 .footer {
   background-color: #333333;
   padding: 7rem 0;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  margin-top: -7rem; }
   @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
@@ -680,6 +683,8 @@ body {
       transform: skewX(0); } }
   @media (max-width: 37.5em) {
     .reviews {
+      padding: 8rem;
+      padding-left: 7rem;
       transform: skewX(0); } }
   .reviews__shape {
     width: 15rem;

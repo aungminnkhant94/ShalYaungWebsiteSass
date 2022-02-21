@@ -34,21 +34,21 @@ body {
 
     &--sub {
         display: block;
-        font-size: 20px;
+        font-size: 2.3rem;
         font-weight: 400;
-        letter-spacing: 6px;
+        letter-spacing: 2px;
         animation: moveInRight 1s ease-out;
 
         @include respond(phone) {
-            letter-spacing: 0.5rem;
             font-weight: 600;
+            display: inline-block;
         }
 
         @include respond(tab-port) {
-            letter-spacing: 0.5rem;
             font-size: 1.2rem;
+            font-size: $medium-font-size;
+            text-align: center;
         }
-
     }
 }
 

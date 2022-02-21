@@ -4,6 +4,7 @@
     url('../img/shalhero.jpg');
     background-size: cover;
     background-position: center;
+    z-index: -1;
     position: relative;
 
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
