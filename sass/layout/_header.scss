@@ -9,7 +9,7 @@
     z-index: -1;
     position: relative;
 
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%);
 
     @include respond(phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
@@ -29,7 +29,6 @@
         left: 40px;
         height: auto;
     }
-
 
 
     &__logo{
