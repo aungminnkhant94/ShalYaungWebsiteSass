@@ -20,3 +20,23 @@ $(document).ready(function(){
         }]
     });
 });
+
+// const navLink = document.querySelectorAll('.navigation__item');
+// const navBackground = document.querySelector('.navigation__background');
+// const navBar = document.querySelector('.navigation__nav')
+
+// function linkAction() {
+//     navLink.forEach(n => n.remove("navBackground", "navBar"));
+// }
+
+// navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal('.section-about',{delay: 200});

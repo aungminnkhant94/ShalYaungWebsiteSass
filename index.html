@@ -20,20 +20,64 @@
     <script src="https://kit.fontawesome.com/0783b03114.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- ============ Navigation ============ -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">
+            <img src="img/logo.png" alt="Logo" class="header__logo ">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Blogs</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-
-    <div class="navigation">
+    <!-- <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
         <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
+            <span class="navigation__icon"> </span>
         </label>
 
-        <div class="navigation__background">&nbsp;</div>
+        <div class="navigation__background"> </div>
 
         <nav class="navigation__nav" id="nav-menu">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#home" class="navigation__link"><span>01</span>About Us</a></li>
+                <li class="navigation__item">
+                    <a href="#home" class="navigation__link"><span>01</span>About Us</a>
+                </li>
                 <li class="navigation__item"><a href="#projects" class="navigation__link"><span>02</span>Projects</a></li>
                 <li class="navigation__item"><a href="#services" class="navigation__link"><span>03</span>Services</a></li>
                 <li class="navigation__item"><a href="#reviews" class="navigation__link"><span>04</span>Reviews</a></li>
@@ -42,14 +86,13 @@
                 </ul>
             </ul>
         </nav>
-    </div>
+    </div> -->
     <!-- ============ Header ============ -->
     <header class="header">
         
-        <div class="header__logo-box">
+        <!-- <div class="header__logo-box">
             <img src="img/logo.png" alt="Logo" class="header__logo u-margin-bottom-medium">
-        </div>
-
+        </div> -->
 
         <div class="header__text-box">
             <h1 class="heading-primary">
@@ -115,7 +158,7 @@
                         Even through crisis situations like Covid 19 and Coup, Shal Yaung proudly provides Digital marketing & Branding Services for over 20 Myanmar B2C/B2B business brands. Moreover, We have provided Facebook media Buying Services ( boosting ) to over 150 Local SMEs Business within one years.
                         We do provide from generating business online strategies to campaigns, content creation, advertising & consulting to boost your business growth.
                     </p>
-                    <a href="#" class="btn-text">
+                    <a href="projects.html" class="btn-text">
                         Learn More &rarr;
                     </a>
                 </div>
@@ -317,12 +360,12 @@
             </div>
 
             <div class="u-center-text ">
-                <a href="#" class="btn-text">Read all stories &rarr;</a>
+                <a href="reviews.html" class="btn-text">Read all reviews &rarr;</a>
             </div>
         </section>
     </main>
 
-    <!-- ============ Work Flow ============ -->
+    <!-- ============ Contact Us ============ -->
     <footer class="footer" id="contact">
         <a href="#home">
             <div class="footer__logo-box">
@@ -377,6 +420,9 @@
             </p>
         </div>
     </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="js/script.js"></script>

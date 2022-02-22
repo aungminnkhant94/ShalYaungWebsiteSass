@@ -30,6 +30,8 @@
         height: auto;
     }
 
+
+
     &__logo{
         height: 75px;
     }
@@ -57,6 +59,11 @@
 
         path{
             fill: black;
+        }
+
+        @include respond(tab-port) {
+            stroke: white;
+            fill: white;
         }
     }
 }
