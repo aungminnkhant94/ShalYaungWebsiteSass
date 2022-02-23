@@ -212,8 +212,10 @@ body {
       .header__text-box {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -65%);
-        text-align: center; } }
+        transform: translate(-50%, -80%);
+        text-align: center;
+        background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(105, 105, 105, 0.3));
+        background-size: cover; } }
   .header__down-arrow {
     stroke: black;
     position: absolute;
@@ -606,9 +608,7 @@ body {
     .reviews {
       width: 100%;
       padding: 6rem;
-      padding-left: 7rem;
-      margin-left: auto;
-      transform: skewX(0); } }
+      padding-left: 7rem; } }
   @media (max-width: 37.5em) {
     .reviews {
       padding: 8rem;
@@ -631,6 +631,12 @@ body {
     height: 100%; }
   .reviews__text {
     transform: skewX(12deg); }
+    @media (max-width: 56.25em) {
+      .reviews__text {
+        transform: skewX(0); } }
+    @media (max-width: 75em) {
+      .reviews__text {
+        transform: skewX(12deg); } }
     @media (max-width: 37.5em) {
       .reviews__text {
         transform: skewX(0); } }

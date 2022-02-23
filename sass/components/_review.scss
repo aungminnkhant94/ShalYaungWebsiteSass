@@ -19,9 +19,6 @@
         width: 100%;
         padding: 6rem;
         padding-left: 7rem;
-        margin-left: auto;
-        transform: skewX(0);
-
     }
 
     @include respond(phone) {
@@ -41,6 +38,11 @@
         transform: translateX(-3rem) skewX(12deg);
         box-shadow: 0 3rem 6rem rgba($color-black, .1);
 
+
+        // @include respond(tab-port) {
+        //     transform: translateX(-3rem);
+        // }
+
         @include respond(phone) {
             transform: translateX(-3rem) skewX(0);
         }
@@ -52,6 +54,14 @@
 
     &__text {
         transform: skewX(12deg);
+
+        @include respond(tab-port) {
+            transform: skewX(0);
+        }
+
+        @include respond(tab-land) {
+            transform: skewX(12deg);
+        }
 
         @include respond(phone) {
             transform: skewX(0);
