@@ -2,7 +2,7 @@
     background-color: $color-grey-dark-1;
     padding: 7rem 0;
     font-size: 1.4rem;
-    margin-top: -7rem;
+    margin-top: -9rem;
 
     @include respond(tab-port) {
         padding: 8rem 0;
@@ -14,6 +14,7 @@
 
     &__data {
         row-gap: .75rem;
+        list-style: none;
     }
 
     &__logo-box {
@@ -54,10 +55,6 @@
             margin-right: auto;
         }
 
-        a {
-            text-decoration: none;
-            color: aliceblue;
-        }
 
         &--icon {
             // font-size: 2.7rem;
@@ -73,6 +70,13 @@
             -webkit-background-clip: text; 
             //  .2rem
             color: transparent;
+        }
+
+        &--facebook, &--instagram {
+            a {
+                text-decoration: none;
+                color: $color-primary-dark;
+            }
         }
     }
 
@@ -97,7 +101,7 @@
     
     &__copyright {
         text-align: center;
-        color: $color-primary;
+        color: black;
         font-weight: 500;
         font-size: $medium-font-size;
         margin-top: 2rem;
@@ -109,7 +113,7 @@
         }
 
         span {
-            color: black;
+            color: $color-primary;
             font-weight: bold;
             
         }

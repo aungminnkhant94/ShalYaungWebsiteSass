@@ -67,18 +67,13 @@ body {
   .heading-primary--sub {
     display: block;
     font-size: 2.3rem;
-    font-weight: 400;
+    font-weight: bolder;
     letter-spacing: 2px;
     animation: moveInRight 1s ease-out; }
-    @media (max-width: 37.5em) {
-      .heading-primary--sub {
-        letter-spacing: 0.5rem;
-        font-weight: 600;
-        font-size: 10rem; } }
     @media (max-width: 56.25em) {
       .heading-primary--sub {
-        font-size: 1.2rem;
-        text-align: center; } }
+        font-size: 1.5rem;
+        font-weight: bold; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -183,10 +178,10 @@ body {
   background-position: center;
   z-index: -1;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh); }
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh); }
   @media (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90vh);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       background-position: right; } }
   @media (max-width: 56.25em) {
@@ -207,11 +202,17 @@ body {
     left: 30%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .header__text-box {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; } }
     @media (max-width: 37.5em) {
       .header__text-box {
         top: 50%;
         left: 50%;
-        transform: translate(-40%, -50%);
+        transform: translate(-50%, -65%);
         text-align: center; } }
   .header__down-arrow {
     stroke: black;
@@ -290,14 +291,15 @@ body {
   background-color: #333333;
   padding: 7rem 0;
   font-size: 1.4rem;
-  margin-top: -7rem; }
+  margin-top: -9rem; }
   @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
   .footer h3 {
     color: #FFFFFF; }
   .footer__data {
-    row-gap: .75rem; }
+    row-gap: .75rem;
+    list-style: none; }
   .footer__logo-box {
     text-align: center;
     margin-top: -5rem; }
@@ -327,9 +329,6 @@ body {
       .footer__information {
         text-align: left;
         margin-right: auto; } }
-    .footer__information a {
-      text-decoration: none;
-      color: aliceblue; }
     .footer__information--icon {
       font-size: 2.7rem;
       margin-bottom: .5rem;
@@ -339,9 +338,12 @@ body {
       background-image: linear-gradient(to right, #ae4247, #696969);
       -webkit-background-clip: text;
       color: transparent; }
+    .footer__information--facebook a, .footer__information--instagram a {
+      text-decoration: none;
+      color: #696969; }
   .footer__copyright {
     text-align: center;
-    color: #c32c34;
+    color: black;
     font-weight: 500;
     font-size: 2rem;
     margin-top: 2rem;
@@ -350,7 +352,7 @@ body {
     .footer__copyright a {
       text-decoration: none; }
     .footer__copyright span {
-      color: black;
+      color: #c32c34;
       font-weight: bold; }
 
 .navbar {
@@ -358,19 +360,24 @@ body {
   padding-top: 0;
   position: relative; }
 
-.navbar-nav {
-  float: right; }
-  .navbar-nav .nav-item {
-    margin-right: 4rem;
-    padding-right: 10px; }
-    .navbar-nav .nav-item .nav-link {
-      font-size: 2rem;
-      color: #c32c34; }
+.navbar-nav .nav-item {
+  margin-right: 4rem;
+  padding-right: 10px; }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 2rem;
+    color: #c32c34; }
 
 .navbar-toggler {
   height: 5em;
   width: 5em;
   left: 0; }
+
+.blog-section {
+  margin-bottom: 20rem; }
+
+.card-text {
+  color: black;
+  font-size: 1.5rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -581,7 +588,7 @@ body {
           border-bottom: 1px solid #eee; }
 
 .reviews {
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: #FFFFFF;
@@ -600,7 +607,7 @@ body {
       width: 100%;
       padding: 6rem;
       padding-left: 7rem;
-      margin-left: -8rem;
+      margin-left: auto;
       transform: skewX(0); } }
   @media (max-width: 37.5em) {
     .reviews {

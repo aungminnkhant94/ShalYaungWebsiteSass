@@ -44,15 +44,14 @@ body {
         letter-spacing: 2px;
         animation: moveInRight 1s ease-out;
 
-        @include respond(phone) {
-            font-weight: bold;
-            font-size: 5rem;
-            font-weight: bold;
-        }
+        // @include respond(phone) {
+        //     font-weight: bold;
+        //     font-size: 5rem;
+        //     font-weight: bold;
+        // }
 
         @include respond(tab-port) {
-            font-size: 5rem;
-            text-align: center;
+            font-size: 1.5rem;
             font-weight: bold;
         }
     }
