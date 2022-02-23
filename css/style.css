@@ -47,6 +47,9 @@ body {
   /* to refresh the element to orginal after animation */
   backface-visibility: hidden;
   margin-bottom: 60px; }
+  @media (max-width: 37.5em) {
+    .heading-primary {
+      margin-top: 2rem; } }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -74,6 +77,9 @@ body {
       .heading-primary--sub {
         font-size: 1.5rem;
         font-weight: bold; } }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: 1px; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -214,8 +220,7 @@ body {
         left: 50%;
         transform: translate(-50%, -80%);
         text-align: center;
-        background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(105, 105, 105, 0.3));
-        background-size: cover; } }
+        background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(105, 105, 105, 0.3)); } }
   .header__down-arrow {
     stroke: black;
     position: absolute;
