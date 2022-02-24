@@ -56,8 +56,8 @@
             left: 50%;
             transform: translate(-50%, -80%);
             text-align: center;
-            background-image: linear-gradient(to right bottom, rgba($color-white,0.8),
-            rgba($color-white,0.9));
+            background-image: linear-gradient(to right bottom, rgba($color-primary-dark,0.5),
+            rgba($color-primary-dark,0.4));
             // box-shadow: 0 1.5rem 3rem rgba($color-black, .4);
             border-radius: 8px;
         }
