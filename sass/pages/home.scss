@@ -1,5 +1,6 @@
 .section-about {
     background-color: $color-white;
+    
     padding: 20rem 0;
     margin-top: -20vh;
 
@@ -21,6 +22,21 @@
 
     @include respond(tab-port) {
         padding: 15rem 0;
+    }
+
+    @include respond(phone) {
+        margin-bottom: 0.2rem;
+    }
+}
+
+.section-numbers {
+    background-color: $color-white;
+    padding: 20rem;
+    margin-top: -30rem;
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+        margin-top: 8rem;
     }
 
     @include respond(phone) {

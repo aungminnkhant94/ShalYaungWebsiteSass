@@ -540,6 +540,27 @@ body {
     font-size: 1.6rem;
     color: #696969; }
 
+.number-box {
+  background-color: rgba(247, 247, 247, 0.8);
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  @media (max-width: 56.25em) {
+    .number-box {
+      padding: 2rem; } }
+  .number-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+  .number-box__heading {
+    font-size: 1.6rem;
+    color: #696969; }
+  .number-box__big {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: black; }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -777,6 +798,18 @@ body {
       padding: 15rem 0; } }
   @media (max-width: 37.5em) {
     .section-features {
+      margin-bottom: 0.2rem; } }
+
+.section-numbers {
+  background-color: #FFFFFF;
+  padding: 20rem;
+  margin-top: -30rem; }
+  @media (max-width: 56.25em) {
+    .section-numbers {
+      padding: 15rem 0;
+      margin-top: 8rem; } }
+  @media (max-width: 37.5em) {
+    .section-numbers {
       margin-bottom: 0.2rem; } }
 
 .section-about {
